@@ -3,7 +3,7 @@
 class triengale : public row
 {
 public:
-	triengale(bool rand);
+	triengale();
 	void update(int, int);
 private:
 	void rotate();

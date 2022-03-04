@@ -15,19 +15,13 @@ int main()
 {
 	srand(time(NULL));
 	//Create class
-	ellipse po;
-	krug ro;
-	row rr;
-	rect re;
-	triengale tr(false);
-	rhomb rh;
+	row* rows[4]= {new row, new rect, new rhomb, new triengale};
+	point* points[4]= {new point, new krug, new ellipse, new ellipse};
 	//Create window and tick;
-	RenderWindow window(VideoMode(scale[0], scale[1]), "laba 4");
+	RenderWindow window(VideoMode(scale[0], scale[1]), "laba 5");
 	//system("cls");
 	Clock clk;
 	Time timeSinceLastUpdate = Time::Zero;
-
-	// no texture coordinates here, we'll see that later
 	//Run
 	
 	while (window.isOpen())
@@ -40,22 +34,18 @@ int main()
 			timeSinceLastUpdate -= TimePerFrame;
 			//update
 			if (!Keyboard::isKeyPressed(Keyboard::Space)) {
-				po.update(scale[0], scale[1]);
-				ro.update(scale[0], scale[1]);
-				rr.update(scale[0], scale[1]);
-				tr.update(scale[0], scale[1]);
-				re.update(scale[0], scale[1]);
-				rh.update(scale[0], scale[1]);
+				for (int i = 0; i < 4; i++) {
+					rows[i]->update(scale[0], scale[1]);
+					points[i]->update(scale[0], scale[1]);
+				}
 			}           
 		}
 		window.clear();
 		//draw
-		window.draw(po.getPoint());
-		window.draw(ro.getPoint());
-		window.draw(rr.getVertex());
-		window.draw(tr.getVertex());
-		window.draw(re.getVertex());
-		window.draw(rh.getVertex());
+		for (int i = 0; i < 4; i++) {
+			window.draw(rows[i]->getVertex());
+			window.draw(points[i]->getPoint());
+		}
 		window.display();
 	}
 	return 0;

@@ -4,7 +4,7 @@ class row : public figure
 {
 public:
 	row();
-	void update(int, int);
+	virtual void update(int, int);
 
 	sf::VertexArray getVertex() {
 		return tangle;

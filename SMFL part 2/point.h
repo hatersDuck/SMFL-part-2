@@ -7,7 +7,7 @@ public:
 	point();
 	sf::CircleShape getPoint();
 
-	void update(int, int);
+	virtual void update(int, int);
 
 protected:
 	sf::CircleShape circle;
