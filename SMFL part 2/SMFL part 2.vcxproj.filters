@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\point">
+      <UniqueIdentifier>{54cafd82-7044-4cdf-a910-855411e7ae23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\point">
+      <UniqueIdentifier>{f9079e82-b7ea-4643-a53d-30607b64cdc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\row">
+      <UniqueIdentifier>{6ee15b57-318f-4b59-a93b-c254bf17e4b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\row">
+      <UniqueIdentifier>{0b4396ac-b6db-4ef0-8025-1b4a6cd6a912}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="krug.cpp">
+      <Filter>Исходные файлы\point</Filter>
+    </ClCompile>
+    <ClCompile Include="point.cpp">
+      <Filter>Исходные файлы\point</Filter>
+    </ClCompile>
+    <ClCompile Include="figure.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="ellipse.cpp">
+      <Filter>Исходные файлы\point</Filter>
+    </ClCompile>
+    <ClCompile Include="row.cpp">
+      <Filter>Исходные файлы\row</Filter>
+    </ClCompile>
+    <ClCompile Include="triengale.cpp">
+      <Filter>Исходные файлы\row</Filter>
+    </ClCompile>
+    <ClCompile Include="rect.cpp">
+      <Filter>Исходные файлы\row</Filter>
+    </ClCompile>
+    <ClCompile Include="rhomb.cpp">
+      <Filter>Исходные файлы\row</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="figure.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="krug.h">
+      <Filter>Файлы заголовков\point</Filter>
+    </ClInclude>
+    <ClInclude Include="point.h">
+      <Filter>Файлы заголовков\point</Filter>
+    </ClInclude>
+    <ClInclude Include="ellipse.h">
+      <Filter>Файлы заголовков\point</Filter>
+    </ClInclude>
+    <ClInclude Include="row.h">
+      <Filter>Файлы заголовков\row</Filter>
+    </ClInclude>
+    <ClInclude Include="triengale.h">
+      <Filter>Файлы заголовков\row</Filter>
+    </ClInclude>
+    <ClInclude Include="rect.h">
+      <Filter>Файлы заголовков\row</Filter>
+    </ClInclude>
+    <ClInclude Include="rhomb.h">
+      <Filter>Файлы заголовков\row</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
