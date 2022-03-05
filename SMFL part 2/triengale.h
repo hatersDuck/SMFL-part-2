@@ -4,7 +4,7 @@ class triengale : public row
 {
 public:
 	triengale();
-	void update(int, int);
+	void update();
 private:
 	void rotate();
 

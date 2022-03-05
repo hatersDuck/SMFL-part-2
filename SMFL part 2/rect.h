@@ -4,7 +4,8 @@ class rect : public row
 {
 public:
 	rect();
-	void update(int, int);
+	rect(float sizeA, float sizeB);
+	void update();
 
 protected:
 	void rotate();

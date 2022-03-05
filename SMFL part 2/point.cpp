@@ -8,30 +8,22 @@ point::point() {
 	circle.setFillColor(color);
 }
 
-void point::update(int w, int h) {
+void point::update() {
 	move();
+	circle.move(speed);
 	bouX = false;
-	if (checkBounce(w, h))
+	if (checkBounce())
 		bounce(bouX);
 }
 
-bool point::checkBounce(int w, int h) {
-	if (((pos.x <= radius) && !right) || ((pos.x >= (w - radius)) && right)) {
+bool point::checkBounce() {
+	if (((pos.x <= radius) && !right) || ((pos.x >= (screenWeight - radius)) && right)) {
 		bouX = true;
 		return true;
 	}
-	else if (((pos.y <= radius) && up) || (((pos.y >= (h - radius)) && !up))) {
+	else if (((pos.y <= radius) && up) || (((pos.y >= (screenHeight - radius)) && !up))) {
 		bouX = false;
 		return true;
 	}
 	return false;
-}
-
-void point::move() {
-	figure::move();
-	circle. move(speed);
-}
-
-sf::CircleShape point::getPoint() {
-	return circle;
 }

@@ -5,14 +5,16 @@ class point : public figure
 {
 public:
 	point();
-	sf::CircleShape getPoint();
 
-	virtual void update(int, int);
+	void drawFigure(sf::RenderWindow& wind) {
+		wind.draw(circle);
+	}
+
+	void update();
 
 protected:
 	sf::CircleShape circle;
 
-	bool checkBounce(int, int);
-	void move();
+	bool checkBounce();
 };
 

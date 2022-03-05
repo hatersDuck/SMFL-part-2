@@ -5,7 +5,7 @@ class ellipse :
 {
 public:
     ellipse();
-    void update(int w, int h);    
+    void update();    
 private:
     float b, p, c;
 };

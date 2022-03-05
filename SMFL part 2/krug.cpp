@@ -2,6 +2,5 @@
 
 krug::krug() {
 	circle.setRadius(radius = 40.f);
-	center.x = radius, center.y = radius;
-	circle.setOrigin(center);
+	circle.setOrigin(sf::Vector2f(radius, radius));
 }

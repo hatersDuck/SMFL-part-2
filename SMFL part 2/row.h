@@ -1,13 +1,15 @@
 #pragma once
 #include "figure.h"
+
+
 class row : public figure
 {
 public:
 	row();
-	virtual void update(int, int);
+	void update();
 
-	sf::VertexArray getVertex() {
-		return tangle;
+	void drawFigure(sf::RenderWindow& wind) {
+		wind.draw(tangle);
 	}
 
 protected:
@@ -17,9 +19,8 @@ protected:
 
 	float sizeA, sizeB;
 
-	void move();
 	void rotate();
-	bool checkBounce(int, int, int);
+	bool checkBounce(int);
 
 	sf::Clock dt;
 };
